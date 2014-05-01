@@ -16,6 +16,7 @@
 		<module>yadarts-usb</module>
 		<module>yadarts-dummy-board</module>
 		<module>yadarts-runtime</module>
+		<module>yadarts-test-console</module>
 	</modules>
 
 	<properties>
