@@ -72,6 +72,10 @@ public class GameEventBus {
 	public synchronized void registerListener(GameEventListener l) {
 		this.listeners.add(l);
 	}
+	
+	public synchronized void unRegisterListener(GameEventListener l) {
+		this.listeners.remove(l);
+	}
 
 	public void endGame(final AbstractGame game) {
 		this.executor.submit(new Runnable() {
@@ -92,5 +96,6 @@ public class GameEventBus {
 			}
 		});		
 	}
+
 	
 }
