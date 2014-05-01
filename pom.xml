@@ -179,11 +179,13 @@
 			<plugin>
 				<groupId>com.mycila</groupId>
 				<artifactId>license-maven-plugin</artifactId>
+				<inherited>false</inherited>
 				<configuration>
 					<header>misc/license_header.txt</header>
 					<includes>
 						<include>**/src/**/*.java</include>
 					</includes>
+					<aggregate>true</aggregate>
 					<properties>
 						<year>${project.inceptionYear}</year>
 					</properties>
